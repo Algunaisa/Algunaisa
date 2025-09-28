@@ -1,15 +1,622 @@
-<!DOCTYPE html>
 
-<link rel="stylesheet" href="styles.css">
 
-<html lang="en">
+<!doctype html>
+
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Jericalla Game Jam</title>
+
+  <meta name="description" content="Jericalla Game Jam: 72 horas para crear un videojuego con sabor tapatío. Día de Muertos - Guadalajara." />
+
+
+
+  <!-- Tailwind CDN -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+
+    tailwind.config = {
+
+      theme: {
+
+        extend: {
+
+          colors: {
+
+            jericalla: '#FFD429',
+
+            'jericalla-orange': '#FF6B1A',
+
+            'jericalla-pink': '#E23FA9',
+
+            'jericalla-purple': '#3D1A78',
+
+            'jericalla-neutral': '#C7C7D1',
+
+            'jericalla-bg': '#1C3D63'
+
+          }
+
+        }
+
+      }
+
+    }
+
+  </script>
+
+
+
+  <!-- Tipografías -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+  <style>
+
+    :root{--glass: rgba(255,255,255,0.06)}
+
+    body { font-family: 'Inter', sans-serif; }
+
+    .pixel { font-family: 'Press Start 2P', monospace; }
+
+    /* pequeño ícono circular jericalla */
+
+    .jericalla-badge{ background: linear-gradient(180deg,#fff3d0,#ffd76e); border-radius:9999px; box-shadow:0 4px 16px rgba(107,45,189,0.12)}
+
+  </style>
+
 </head>
-<body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
+
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+
+
+  <!-- Header -->
+
+  <header class="fixed w-full z-40 bg-gradient-to-b from-black/70 to-transparent backdrop-blur-sm">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <a href="#inicio" class="flex items-center gap-3">
+
+        <div class="jericalla-badge p-2 w-12 h-12 flex items-center justify-center">
+
+          <!-- placeholder sprite -->
+
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="12" cy="12" r="10" fill="#fff" />
+
+            <path d="M7 12c1.5-3 7-3 8 0" stroke="#6B2DBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+          </svg>
+
+        </div>
+
+        <div>
+
+          <div class="text-sm pixel text-amber-300">JERICALLA</div>
+
+          <div class="text-xs -mt-1 text-amber-100">Game Jam</div>
+
+        </div>
+
+      </a>
+
+
+
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+
+        <a href="#sobre" class="hover:underline">Sobre</a>
+
+        <a href="#como-funciona" class="hover:underline">Cómo funciona</a>
+
+        <a href="#recursos" class="hover:underline">Recursos</a>
+
+        <a href="#registro" class="hover:underline">Registro</a>
+
+        <a href="#contacto" class="hover:underline">Contacto</a>
+
+      </nav>
+
+
+
+      <div class="flex items-center gap-3">
+
+        <a href="#registro" class="hidden md:inline-block bg-jericalla text-black px-4 py-2 rounded-lg font-semibold hover:scale-105 transition">Regístrate</a>
+
+        <button id="menuBtn" class="md:hidden p-2 rounded bg-white/5">≡</button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main id="inicio" class="pt-28">
+
+    <!-- Hero -->
+
+    <section class="relative overflow-hidden">
+
+      <div class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <div>
+
+          <h1 class="pixel text-3xl md:text-5xl leading-tight text-jericalla">Jericalla Game Jam 2025</h1>
+
+          <p class="mt-4 text-gray-300 max-w-xl">72 horas para crear un videojuego con sabor tapatío. Tema secreto, equipo o solista, todo el talento indie está invitado. Talent Land — Guadalajara. Día de Muertos.</p>
+
+
+
+          <div class="mt-6 flex gap-3">
+
+            <a href="#registro" class="inline-block bg-jericalla text-black px-5 py-3 rounded-lg font-semibold shadow-lg hover:translate-y-[-2px] transition">Regístrate ahora</a>
+
+            <a href="#recursos" class="inline-block border border-white/10 px-5 py-3 rounded-lg">Ver recursos</a>
+
+          </div>
+
+
+
+          <div class="mt-8 grid grid-cols-3 gap-3 max-w-sm">
+
+            <div class="p-3 bg-white/5 rounded-lg text-center">
+
+              <div class="text-2xl">⏱️</div>
+
+              <div class="text-xs mt-1">72 horas</div>
+
+            </div>
+
+            <div class="p-3 bg-white/5 rounded-lg text-center">
+
+              <div class="text-2xl">📍</div>
+
+              <div class="text-xs mt-1">Talent Land</div>
+
+            </div>
+
+            <div class="p-3 bg-white/5 rounded-lg text-center">
+
+              <div class="text-2xl">👾</div>
+
+              <div class="text-xs mt-1">Indie-friendly</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Mockup / illustration -->
+
+        <div class="flex items-center justify-center">
+
+          <div class="w-full max-w-md">
+
+            <div class="bg-gradient-to-br from-gray-800/60 to-black rounded-2xl p-6 shadow-2xl">
+
+              <div class="h-48 bg-white/5 rounded-md flex items-center justify-center">
+
+                <!-- Placeholder para una imagen pixel art -->
+
+                <div class="text-center text-gray-400">
+
+                  <div class="text-3xl">🪄</div>
+
+                  <div class="text-sm mt-2">Ilustración / mockup</div>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="mt-4 grid grid-cols-2 gap-3">
+
+                <div class="p-3 bg-white/3 rounded">Tema secreto</div>
+
+                <div class="p-3 bg-white/3 rounded">Plantillas Unity/Godot</div>
+
+                <div class="p-3 bg-white/3 rounded">Assets</div>
+
+                <div class="p-3 bg-white/3 rounded">Showcase</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+      <!-- Decorative footer wave -->
+
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 -mb-1">
+
+        <svg viewBox="0 0 1440 100" class="w-full h-20" preserveAspectRatio="none"><path d="M0,30 C200,80 400,0 720,20 C1040,40 1240,80 1440,40 L1440 100 L0 100 Z" fill="#0b1220" opacity="0.9"></path></svg>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Sobre -->
+
+    <section id="sobre" class="max-w-6xl mx-auto px-6 py-12">
+
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+
+        <div>
+
+          <h2 class="text-2xl font-semibold">¿Qué es la Jericalla Game Jam?</h2>
+
+          <p class="mt-3 text-gray-300">Un evento de 72 horas para crear juegos cortos, divertidos y con una vibra local. Perfecto para desarrolladores, artistas y compositores que quieran probar ideas, colaborar y mostrar su trabajo en Talent Land — Guadalajara.</p>
+
+
+
+          <ul class="mt-4 space-y-2 text-sm text-gray-400">
+
+            <li>• Equipos o solistas</li>
+
+            <li>• Tema secreto revelado al inicio</li>
+
+            <li>• Plantillas y assets disponibles</li>
+
+            <li>• Presentación y showcase final</li>
+
+          </ul>
+
+        </div>
+
+        <div class="bg-white/5 p-6 rounded-lg">
+
+          <h3 class="font-medium">Fechas & Lugar</h3>
+
+          <p class="mt-2 text-sm text-gray-300">2–4 de noviembre, Talent Land — Guadalajara. (Ejemplo: ajusta según confirmación)</p>
+
+
+
+          <div class="mt-4 grid grid-cols-2 gap-3">
+
+            <div class="p-3 bg-white/3 rounded text-sm">Inscripción: gratuita / cuota simbólica</div>
+
+            <div class="p-3 bg-white/3 rounded text-sm">Formato: híbrido / presencial</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Cómo funciona -->
+
+    <section id="como-funciona" class="bg-gradient-to-b from-black/70 to-transparent py-12">
+
+      <div class="max-w-6xl mx-auto px-6">
+
+        <h2 class="text-2xl font-semibold">Cómo funciona</h2>
+
+        <div class="mt-6 grid md:grid-cols-4 gap-4">
+
+          <div class="bg-white/5 p-4 rounded-lg text-center">
+
+            <div class="text-3xl">1</div>
+
+            <div class="mt-2 text-sm">Regístrate</div>
+
+          </div>
+
+          <div class="bg-white/5 p-4 rounded-lg text-center">
+
+            <div class="text-3xl">2</div>
+
+            <div class="mt-2 text-sm">Tema secreto</div>
+
+          </div>
+
+          <div class="bg-white/5 p-4 rounded-lg text-center">
+
+            <div class="text-3xl">3</div>
+
+            <div class="mt-2 text-sm">Desarrolla 72h</div>
+
+          </div>
+
+          <div class="bg-white/5 p-4 rounded-lg text-center">
+
+            <div class="text-3xl">4</div>
+
+            <div class="mt-2 text-sm">Muestra tu juego</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Recursos -->
+
+    <section id="recursos" class="max-w-6xl mx-auto px-6 py-12">
+
+      <h2 class="text-2xl font-semibold">Recursos y plantillas</h2>
+
+      <p class="mt-2 text-gray-300">Plantillas, assets y herramientas recomendadas para arrancar rápido.</p>
+
+
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+
+        <div class="p-4 bg-white/5 rounded-lg">
+
+          <h4 class="font-medium">Unity</h4>
+
+          <p class="text-sm text-gray-400 mt-2">Starter template con input móvil y sistema de escenas.</p>
+
+          <a class="mt-3 inline-block text-sm underline" href="#">Descargar</a>
+
+        </div>
+
+        <div class="p-4 bg-white/5 rounded-lg">
+
+          <h4 class="font-medium">Godot</h4>
+
+          <p class="text-sm text-gray-400 mt-2">Proyecto base 2D con sistema de tiles y cámara.</p>
+
+          <a class="mt-3 inline-block text-sm underline" href="#">Descargar</a>
+
+        </div>
+
+        <div class="p-4 bg-white/5 rounded-lg">
+
+          <h4 class="font-medium">Assets</h4>
+
+          <p class="text-sm text-gray-400 mt-2">Sprites, efectos de sonido y música libre para jam.</p>
+
+          <a class="mt-3 inline-block text-sm underline" href="#">Explorar</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Registro -->
+
+    <section id="registro" class="bg-gradient-to-b from-black/80 to-transparent py-12">
+
+      <div class="max-w-4xl mx-auto px-6">
+
+        <div class="bg-white/5 p-6 rounded-lg grid md:grid-cols-2 gap-6">
+
+          <div>
+
+            <h2 class="text-2xl font-semibold">Registro</h2>
+
+            <p class="mt-2 text-gray-300">Rellena los datos para recibir información, el kit de inicio y acceso al Discord de la Jam.</p>
+
+
+
+            <ul class="mt-4 text-sm text-gray-400 space-y-2">
+
+              <li>• Cupo limitado (si aplica)</li>
+
+              <li>• Equipos o solistas</li>
+
+              <li>• Se enviará el tema al inicio del evento</li>
+
+            </ul>
+
+          </div>
+
+
+
+          <form id="regForm" class="space-y-3" onsubmit="handleSubmit(event)">
+
+            <div>
+
+              <label class="text-sm text-gray-300">Nombre completo</label>
+
+              <input required name="name" class="w-full mt-1 bg-white/5 px-3 py-2 rounded focus:outline-none" placeholder="Tu nombre" />
+
+            </div>
+
+            <div>
+
+              <label class="text-sm text-gray-300">Correo</label>
+
+              <input required type="email" name="email" class="w-full mt-1 bg-white/5 px-3 py-2 rounded focus:outline-none" placeholder="tucorreo@ejemplo.com" />
+
+            </div>
+
+            <div>
+
+              <label class="text-sm text-gray-300">Alias (opcional)</label>
+
+              <input name="alias" class="w-full mt-1 bg-white/5 px-3 py-2 rounded" placeholder="Tu handle" />
+
+            </div>
+
+            <div>
+
+              <label class="text-sm text-gray-300">Motor preferido</label>
+
+              <select name="engine" class="w-full mt-1 bg-white/5 px-3 py-2 rounded">
+
+                <option>Unity</option>
+
+                <option>Godot</option>
+
+                <option>Construct</option>
+
+                <option>Otro</option>
+
+              </select>
+
+            </div>
+
+
+
+            <div class="flex items-center gap-3">
+
+              <button type="submit" class="bg-jericalla text-black px-4 py-2 rounded-lg font-semibold">Enviar</button>
+
+              <div id="formMsg" class="text-sm text-emerald-400 hidden">¡Registro enviado!</div>
+
+            </div>
+
+          </form>
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Premios / Showcase -->
+
+    <section id="showcase" class="max-w-6xl mx-auto px-6 py-12">
+
+      <h2 class="text-2xl font-semibold">Showcase y premios</h2>
+
+      <p class="mt-2 text-gray-300">Los juegos seleccionados serán exhibidos en la pantalla principal durante Talent Land. (Opcional: agrega premios o menciones especiales).</p>
+
+
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+
+        <div class="bg-white/5 p-4 rounded">Mención: Mejor arte</div>
+
+        <div class="bg-white/5 p-4 rounded">Mención: Mejor audio</div>
+
+        <div class="bg-white/5 p-4 rounded">Mención: Juego más original</div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Contacto / Footer -->
+
+    <footer id="contacto" class="bg-black/80 py-10 mt-8">
+
+      <div class="max-w-6xl mx-auto px-6 text-sm text-gray-400 grid md:grid-cols-3 gap-6">
+
+        <div>
+
+          <div class="pixel text-amber-300">JERICALLA</div>
+
+          <div class="mt-2">Organizado por la comunidad indie — Guadalajara</div>
+
+        </div>
+
+        <div>
+
+          <div class="font-medium">Contacto</div>
+
+          <div class="mt-2">jam@jericallagamejam.example</div>
+
+        </div>
+
+        <div>
+
+          <div class="font-medium">Redes</div>
+
+          <div class="mt-2 flex gap-3">
+
+            <a href="#" class="underline">Discord</a>
+
+            <a href="#" class="underline">Instagram</a>
+
+            <a href="#" class="underline">Twitter</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="mt-8 text-center text-xs text-gray-600">© Jericalla Game Jam — Diseño demo. Ajusta fechas, links y textos antes de publicar.</div>
+
+    </footer>
+
+  </main>
+
+
+
+  <script>
+
+    // Mobile menu toggle (simple)
+
+    const btn = document.getElementById('menuBtn');
+
+    btn?.addEventListener('click', () => alert('Abrir menú móvil — personaliza aquí'));
+
+
+
+    // Mock form submit (sólo demo)
+
+    function handleSubmit(e){
+
+      e.preventDefault();
+
+      document.getElementById('formMsg').classList.remove('hidden');
+
+      // Aquí colocar lógica real: fetch a tu backend o Google Forms
+
+      setTimeout(()=>{
+
+        document.getElementById('formMsg').textContent = 'Gracias — te mandamos el kit al correo.';
+
+      },700);
+
+    }
+
+  </script>
+
+
+
 </body>
+
 </html>
+
