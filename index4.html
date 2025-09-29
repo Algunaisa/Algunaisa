@@ -1,515 +1,168 @@
-<!doctype html>
-
-
-
-<html lang="es">
-
+<!DOCTYPE html><html lang="es">
 <head>
-
-  <meta charset="utf-8" />
-
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <title>Jericalla Game Jam — Día de Muertos 2025</title>
-
-  <meta name="description" content="Jericalla Game Jam: 72 horas para crear un videojuego. Edición Día de Muertos — virtual + exhibición presencial (por confirmar)." />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <script>
-
-    tailwind.config = {
-
-      theme: {
-
-        extend: {
-
-          colors: {
-
-            jericalla: '#FFD429',
-
-            jericalla-orange: '#FF6B1A',
-
-            jericalla-pink: '#E23FA9',
-
-            jericalla-purple: '#3D1A78',
-
-            jericalla-neutral: '#C7C7D1',
-
-            jericalla-bg: '#1C3D63'
-
-          }
-
-        }
-
-      }
-
-    }
-
-  </script>  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jericalla Game Jam Día de Muertos 2025</title>
   <style>
-
-    body{font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
-
-    .pixel{font-family:'Press Start 2P', monospace;}
-
-  </style>
-
-</head>
-
-<body class="bg-jericalla-bg text-white antialiased">  <!-- Header -->  <header class="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-sm">
-
-    <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-
-      <a href="#inicio" class="flex items-center gap-3">
-
-        <!-- small badge (use your logo image here) -->
-
-        <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background:linear-gradient(180deg,#ffb347,#ff6b1a)">
-
-          <img src="logo-placeholder.png" alt="Jericalla logo" class="w-10 h-10 object-contain"/>
-
-        </div>
-
-        <div>
-
-          <div class="pixel text-sm text-jericalla">JERICALLA</div>
-
-          <div class="text-xs text-jericalla-neutral -mt-1">Game Jam</div>
-
-        </div>
-
-      </a><nav class="hidden md:flex gap-6 items-center text-sm text-jericalla-neutral">
-
-    <a href="#sobre" class="hover:text-white">Sobre</a>
-
-    <a href="#como-funciona" class="hover:text-white">Cómo funciona</a>
-
-    <a href="#recursos" class="hover:text-white">Recursos</a>
-
-    <a href="#registro" class="hover:text-white">Registro</a>
-
-    <a href="#showcase" class="hover:text-white">Showcase</a>
-
-  </nav>
-
-
-
-  <div class="flex items-center gap-3">
-
-    <a href="https://itch.io" target="_blank" class="hidden md:inline-block bg-jericalla text-jericalla-purple px-4 py-2 rounded-lg font-semibold shadow">Ir a itch.io</a>
-
-    <a href="#registro" class="md:hidden bg-jericalla px-3 py-2 rounded">Regístrate</a>
-
-  </div>
-
-</div>
-
-
-
-  </header>  <main id="inicio" class="pt-24"><!-- HERO -->
-
-<section class="relative">
-
-  <div class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-
-    <div>
-
-      <h1 class="pixel text-4xl md:text-6xl text-jericalla leading-tight">Jericalla Game Jam<br/><span class="text-jericalla-orange">Día de Muertos</span></h1>
-
-      <p class="mt-4 text-gray-200 max-w-xl">Tercera edición del año — 72 horas para crear un videojuego. Ediciones previas: Talent Land (6 proyectos) y edición virtual de verano (9 entradas). Esta vez: desarrollo virtual con exhibición presencial por confirmar. Aloja tu juego en <strong>itch.io</strong> y únete al Discord.</p>
-
-
-
-      <div class="mt-6 flex flex-wrap gap-3">
-
-        <a href="https://itch.io" target="_blank" class="inline-block bg-jericalla-orange text-white px-5 py-3 rounded-lg font-semibold shadow hover:bg-jericalla-pink transition">Regístrate en itch.io</a>
-
-        <a href="#" class="inline-block border border-white/20 px-5 py-3 rounded-lg">Únete al Discord</a>
-
-      </div>
-
-
-
-      <div class="mt-8 grid grid-cols-3 gap-3 max-w-sm">
-
-        <div class="p-3 bg-white/5 rounded-lg text-center">
-
-          <div class="text-2xl">⏱️</div>
-
-          <div class="text-xs mt-1">72 horas</div>
-
-        </div>
-
-        <div class="p-3 bg-white/5 rounded-lg text-center">
-
-          <div class="text-2xl">📁</div>
-
-          <div class="text-xs mt-1">Aloja en itch.io</div>
-
-        </div>
-
-        <div class="p-3 bg-white/5 rounded-lg text-center">
-
-          <div class="text-2xl">👥</div>
-
-          <div class="text-xs mt-1">Discord activo</div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="flex items-center justify-center">
-
-      <div class="w-full max-w-md">
-
-        <div class="bg-gradient-to-br from-white/3 to-black/30 rounded-2xl p-6 shadow-2xl">
-
-          <div class="h-56 bg-white/5 rounded-md flex items-center justify-center">
-
-            <img src="logo-large-placeholder.png" alt="Logo grande" class="max-h-40"/>
-
-          </div>
-
-          <div class="mt-4 text-sm text-gray-300">Ediciones previas: Talent Land (6) • Jam virtual (9)</div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-  <!-- decorative scallop using logo colors -->
-
-  <div class="absolute left-0 right-0 bottom-0 h-20 pointer-events-none" style="background:linear-gradient(90deg,#1C3D63 0%, #3D1A78 100%); clip-path: polygon(0 40%, 100% 60%, 100% 100%, 0% 100%);"></div>
-
-</section>
-
-
-
-<!-- SOBRE -->
-
-<section id="sobre" class="max-w-6xl mx-auto px-6 py-12">
-
-  <div class="grid md:grid-cols-2 gap-8 items-center">
-
-    <div>
-
-      <h2 class="text-2xl font-semibold text-jericalla">¿Qué es la Jericalla Game Jam?</h2>
-
-      <p class="mt-3 text-gray-300">Una jam de 72 horas para crear juegos cortos y cargados de personalidad. Está pensada para desarrolladores indie, estudiantes y cualquier persona con ganas de experimentar. Publica tu proyecto en itch.io y comparte tu progreso en Discord.</p>
-
-
-
-      <ul class="mt-4 space-y-2 text-sm text-gray-400">
-
-        <li>• Equipos o solistas</li>
-
-        <li>• Tema secreto revelado al inicio</li>
-
-        <li>• Plantillas y assets disponibles</li>
-
-        <li>• Showcase final (presencial por confirmar)</li>
-
-      </ul>
-
-    </div>
-
-    <div class="bg-gradient-to-br from-jericalla-purple/40 to-black/30 p-6 rounded-lg">
-
-      <h3 class="font-medium text-jericalla">Fechas & Formato</h3>
-
-      <p class="mt-2 text-sm text-gray-200">72 horas: Desarrollo virtual. Fecha: Día de Muertos (2–4 de noviembre - confirmar). Exhibición presencial: en Talent Land o espacio aliado (por confirmar).</p>
-
-
-
-      <div class="mt-4 grid grid-cols-2 gap-3">
-
-        <div class="p-3 bg-white/5 rounded text-sm">Aloja en itch.io</div>
-
-        <div class="p-3 bg-white/5 rounded text-sm">Comunicación vía Discord</div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- CÓMO FUNCIONA -->
-
-<section id="como-funciona" class="bg-jericalla-purple/10 py-12">
-
-  <div class="max-w-6xl mx-auto px-6">
-
-    <h2 class="text-2xl font-semibold text-jericalla">Cómo funciona</h2>
-
-    <div class="mt-6 grid md:grid-cols-4 gap-4">
-
-      <div class="bg-white/5 p-4 rounded-lg text-center">
-
-        <div class="text-3xl">1</div>
-
-        <div class="mt-2 text-sm">Regístrate en itch.io</div>
-
-      </div>
-
-      <div class="bg-white/5 p-4 rounded-lg text-center">
-
-        <div class="text-3xl">2</div>
-
-        <div class="mt-2 text-sm">Se revela el tema</div>
-
-      </div>
-
-      <div class="bg-white/5 p-4 rounded-lg text-center">
-
-        <div class="text-3xl">3</div>
-
-        <div class="mt-2 text-sm">Crea tu juego en 72h</div>
-
-      </div>
-
-      <div class="bg-white/5 p-4 rounded-lg text-center">
-
-        <div class="text-3xl">4</div>
-
-        <div class="mt-2 text-sm">Publica y participa en el showcase</div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- RECURSOS -->
-
-<section id="recursos" class="max-w-6xl mx-auto px-6 py-12">
-
-  <h2 class="text-2xl font-semibold text-jericalla">Recursos y plantillas</h2>
-
-  <p class="mt-2 text-gray-300">Kit de inicio con plantillas y assets para arrancar rápido.</p>
-
-
-
-  <div class="mt-6 grid md:grid-cols-3 gap-4">
-
-    <div class="p-4 bg-white/5 rounded-lg">
-
-      <h4 class="font-medium">Unity</h4>
-
-      <p class="text-sm text-gray-400 mt-2">Starter template con input y escenas base.</p>
-
-      <a class="mt-3 inline-block text-sm underline" href="#">Descargar</a>
-
-    </div>
-
-    <div class="p-4 bg-white/5 rounded-lg">
-
-      <h4 class="font-medium">Godot</h4>
-
-      <p class="text-sm text-gray-400 mt-2">Proyecto base 2D con tiles y cámara.</p>
-
-      <a class="mt-3 inline-block text-sm underline" href="#">Descargar</a>
-
-    </div>
-
-    <div class="p-4 bg-white/5 rounded-lg">
-
-      <h4 class="font-medium">Assets</h4>
-
-      <p class="text-sm text-gray-400 mt-2">Sprites, SFX y música libre para jams.</p>
-
-      <a class="mt-3 inline-block text-sm underline" href="#">Explorar</a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- REGISTRO -->
-
-<section id="registro" class="bg-jericalla-orange/6 py-12">
-
-  <div class="max-w-4xl mx-auto px-6">
-
-    <div class="bg-gradient-to-br from-white/3 to-black/20 p-6 rounded-lg grid md:grid-cols-2 gap-6">
-
-      <div>
-
-        <h2 class="text-2xl font-semibold text-jericalla">Registro</h2>
-
-        <p class="mt-2 text-gray-300">Regístrate en la página de la jam en itch.io para recibir el kit, el enlace al Discord y las instrucciones finales.</p>
-
-
-
-        <ul class="mt-4 text-sm text-gray-400 space-y-2">
-
-          <li>• Publica tu proyecto en itch.io al terminar</li>
-
-          <li>• Equipos o solistas bienvenidos</li>
-
-          <li>• Tema secreto al inicio del evento</li>
-
-        </ul>
-
-
-
-        <div class="mt-4">
-
-          <a href="https://itch.io" target="_blank" class="inline-block bg-jericalla text-jericalla-purple px-4 py-2 rounded font-semibold">Ir a itch.io</a>
-
-          <a href="#" class="inline-block ml-3 border border-white/20 px-4 py-2 rounded">Unirme al Discord</a>
-
-        </div>
-
-      </div>
-
-
-
-      <div>
-
-        <form onsubmit="handleDemo(event)" class="space-y-3">
-
-          <div>
-
-            <label class="text-sm text-gray-300">Nombre completo</label>
-
-            <input required name="name" class="w-full mt-1 bg-white/5 px-3 py-2 rounded focus:outline-none" placeholder="Tu nombre" />
-
-          </div>
-
-          <div>
-
-            <label class="text-sm text-gray-300">Correo</label>
-
-            <input required type="email" name="email" class="w-full mt-1 bg-white/5 px-3 py-2 rounded focus:outline-none" placeholder="tucorreo@ejemplo.com" />
-
-          </div>
-
-          <div class="flex items-center gap-3">
-
-            <button type="submit" class="bg-jericalla text-black px-4 py-2 rounded-lg font-semibold">Enviar</button>
-
-            <div id="demoMsg" class="text-sm text-emerald-400 hidden">¡Gracias! Te enviaremos info al correo.</div>
-
-          </div>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- SHOWCASE / PREMIOS -->
-
-<section id="showcase" class="max-w-6xl mx-auto px-6 py-12">
-
-  <h2 class="text-2xl font-semibold text-jericalla">Showcase y menciones</h2>
-
-  <p class="mt-2 text-gray-300">Los juegos se alojan en itch.io; las propuestas destacadas se mostrarán en el showcase presencial (si se confirma). Menciones sugeridas: Mejor arte, Mejor audio, Juego más original.</p>
-
-
-
-  <div class="mt-6 grid md:grid-cols-3 gap-4">
-
-    <div class="bg-white/5 p-4 rounded">Mejor arte</div>
-
-    <div class="bg-white/5 p-4 rounded">Mejor audio</div>
-
-    <div class="bg-white/5 p-4 rounded">Juego más original</div>
-
-  </div>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer class="bg-black/70 py-10 mt-8">
-
-  <div class="max-w-6xl mx-auto px-6 text-sm text-gray-400 grid md:grid-cols-3 gap-6">
-
-    <div>
-
-      <div class="pixel text-amber-300">JERICALLA</div>
-
-      <div class="mt-2">Comunidad indie — Guadalajara</div>
-
-    </div>
-
-    <div>
-
-      <div class="font-medium">Contacto</div>
-
-      <div class="mt-2">jam@jericallagamejam.example</div>
-
-    </div>
-
-    <div>
-
-      <div class="font-medium">Redes</div>
-
-      <div class="mt-2 flex gap-3">
-
-        <a href="#" class="underline">Discord</a>
-
-        <a href="#" class="underline">Instagram</a>
-
-        <a href="#" class="underline">Twitter</a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="mt-8 text-center text-xs text-gray-600">© Jericalla Game Jam — Edición Día de Muertos. Ajusta fechas, links y assets antes de publicar.</div>
-
-</footer>
-
-
-
-  </main>  <script>
-
-    function handleDemo(e){
-
-      e.preventDefault();
-
-      document.getElementById('demoMsg').classList.remove('hidden');
-
-      setTimeout(()=>document.getElementById('demoMsg').textContent = 'Revisaremos tu correo y te mandaremos el kit.' ,700);
-
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      background-color: #1a1a1a;
     }
-
-  </script></body>
-
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background: linear-gradient(90deg, #ffcc00, #6a0dad);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .hero {
+      height: 100vh;
+      background: url('dia-de-muertos.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 80px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background: #ffcc00;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ffdb4d;
+      box-shadow: 0 0 10px #fff176;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffcc00;
+    }
+    .showroom div {
+      margin-bottom: 2rem;
+      background: #2c2c2c;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .steps div {
+      background: #2c2c2c;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .resources ul {
+      list-style: none;
+      padding: 0;
+    }
+    .resources li a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+    .registro a {
+      display: inline-block;
+      margin: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jericalla Game Jam</h1>
+  </header>  <section class="hero">
+    <h2>Jericalla Game Jam Día de Muertos 2025</h2>
+    <p>72 horas para crear un videojuego con sabor tapatío.</p>
+    <p>24, 25 y 26 de Octubre - Desarrollo en línea</p>
+    <a href="https://itch.io" class="btn">🎯 Regístrate Ahora</a>
+  </section>  <section class="sobre">
+    <h3>¿Qué es la Jericalla Game Jam?</h3>
+    <p>Un evento de 72 horas para crear juegos cortos, divertidos y con una vibra local. Perfecto para desarrolladores, artistas y compositores que quieran probar ideas, colaborar y mostrar su trabajo a la comunidad tapatía.</p>
+  </section>  <section class="showroom">
+    <h3>Showroom</h3>
+    <div>
+      <h4>JGJ #1 - TL GDL</h4>
+      <p>Juegos subidos: 6, Formato híbrido en Talent Land. Tema: Todo cabe en un bocado.</p>
+      <a href="https://itch.io" class="btn">🎮 Juega</a>
+    </div>
+    <div>
+      <h4>JGJ #2 - Verano</h4>
+      <p>Juegos subidos: 9, Formato en línea. Tema: Día Lluvioso.</p>
+      <a href="https://itch.io" class="btn">🎮 Juega</a>
+    </div>
+    <div>
+      <h4>JGJ #3 - Día de Muertos</h4>
+      <p>Juegos subidos: Próximamente, Formato en línea. Tema: Por revelar.</p>
+      <a href="https://itch.io" class="btn">✨ Únete</a>
+    </div>
+  </section>  <section class="como-funciona">
+    <h3>Cómo Funciona</h3>
+    <div class="steps">
+      <div>👉 Paso 1: Regístrate en itch.io</div>
+      <div>👉 Paso 2: Se revela el tema secreto</div>
+      <div>👉 Paso 3: Crea tu juego en 72h</div>
+      <div>👉 Paso 4: ¡Muestra tu creación!</div>
+    </div>
+  </section>  <section class="resources">
+    <h3>Recursos</h3>
+    <ul>
+      <li><a href="#">📺 Video: ¿Qué es una jam?</a></li>
+      <li><a href="#">🕹️ Plantilla Unity</a></li>
+      <li><a href="#">🕹️ Plantilla Godot</a></li>
+      <li><a href="#">🎵 Música sin licencia</a></li>
+    </ul>
+  </section>  <section class="registro">
+    <h3>Registro</h3>
+    <a href="https://itch.io" class="btn">Participa</a>
+    <a href="https://discord.com" class="btn">Únete a Discord</a>
+    <div>
+      <p>Síguenos para más información:</p>
+      <a href="#" class="btn">Facebook</a>
+      <a href="#" class="btn">Instagram</a>
+      <a href="#" class="btn">YouTube</a>
+      <a href="#" class="btn">X</a>
+    </div>
+  </section>  <footer>
+    <p>Organizado por la comunidad indie de Guadalajara.</p>
+    <p>Contacto: jericallagamejam@gmail.com</p>
+  </footer>
+</body>
 </html>
