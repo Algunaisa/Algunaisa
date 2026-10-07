@@ -51,9 +51,6 @@ Algunos de mis proyectos y experimentos viven bajo @Algunaisa, donde exploro des
 
 ---
 
-<div align="center">
-<sub>✦ Explore · Code · Repeat ✦</sub>
-</div>
 
 
              ·        ✦
@@ -75,3 +72,4 @@ Algunos de mis proyectos y experimentos viven bajo @Algunaisa, donde exploro des
        ✦              ·
             ·    .         *
               @Algunaisa
+      ✦ Explore · Code · Repeat ✦
