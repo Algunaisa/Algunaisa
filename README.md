@@ -73,5 +73,5 @@ Algunos de mis proyectos y experimentos viven bajo @Algunaisa, donde exploro des
 ---
 
 <div align="center">
-<sub>✦ Explore · Code ·Repeat ✦</sub>
+<sub>✦ Explore · Code · Repeat ✦</sub>
 </div>
