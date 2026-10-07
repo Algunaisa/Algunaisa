@@ -14,7 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<div align="center"><pre>
               ·        ✦
        ·                .
             ╭────────╮
@@ -33,11 +32,18 @@ Here are some ideas to get you started:
             ╰────────╯
        ✦              ·
             ·    .         *
-</pre><h3>👩‍💻 @Algunaisa</h3><p>
+
+
+<div align="center">
+<h3>👩‍💻 @Algunaisa</h3>
+<p>
   <b>Software Developer</b> · .NET · C# · SQL · Web · Game Development
-</p><p>
+</p>
+<p>
   <i>Navegando ideas, creando tecnología.</i>
-</p></div>---
+</p>
+</div>
+---
 
 🌌 Sobre mí
 
@@ -47,7 +53,7 @@ Me gusta experimentar con diferentes tecnologías y convertir ideas en proyectos
 
 🛠️ Tecnologías
 
-- 💻 C# / .NET
+- 💻 C# / .NET / Python
 - 🗄️ SQL / Oracle / Informix
 - 🌐 JavaScript / TypeScript
 - 🎮 Unity / Phaser
@@ -66,6 +72,6 @@ Algunos de mis proyectos y experimentos viven bajo @Algunaisa, donde exploro des
 
 ---
 
-<div align="center"><sub>✦ Code · Create · Explore · Repeat ✦</sub>
-
+<div align="center">
+<sub>✦ Explore · Code ·Repeat ✦</sub>
 </div>
