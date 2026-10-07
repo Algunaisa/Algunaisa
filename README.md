@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 -->
 
 <div align="center">
-<h3>👩‍💻 @Algunaisa</h3>
+<h3>👩‍💻 Isa Flores</h3>
 <p>
   <b>Software Developer</b> · .NET · C# · SQL · Web · Game Development
 </p>
