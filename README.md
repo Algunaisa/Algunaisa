@@ -31,8 +31,8 @@ Here are some ideas to get you started:
             ╰──────────╯
        ✦              ·
             ·    .         *
-            @Algunaisa
-    ✦ Explore · Code · Repeat ✦
+             @Algunaisa
+     ✦ Explore · Code · Repeat ✦
 
     
 <div align="center">
@@ -73,11 +73,13 @@ Algunos de mis proyectos y experimentos viven bajo @Algunaisa, donde exploro des
 
 ---
 
-  ╱|、
- (˚ˎ 。7
-  |、˜〵
-  じしˍ,)ノ
+       ✦              ·
+            ·    .         *
+             ·        ✦
+       ·                .     ╱|、
+       ✦              ·     (˚ˎ 。7
+            ·    .         *  |、˜〵
+             ·        ✦      じしˍ,)ノ
+       ·                .  
   
-  /\_/\  
-( o.o ) 
- > ^ <
+
